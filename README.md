@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+Project Setup
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Prerequisites
+Ensure Node.js and npm are installed on your system.
 
-## Available Scripts
+Create a React Project:
 
-In the project directory, you can run:
+Use the create-react-app tool to initialize a new React project.
+Navigate to the project directory.
 
-### `npm start`
+Create a new JavaScript file for the file upload component in the src directory.
+Define a React component that uses the useState hook to manage the state of the selected file.
+Implement a file input element to allow users to choose a file from their system.
+Add functionality to display the selected file name on the page.
+Include a button or icon for downloading the selected file, with an event handler to manage the download action.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Modify the main application component to include the newly created file upload component.
+Run the React App:
+Use the npm start to start the React development server.
+Open the browser to see the app running locally.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+Backend (Node.js)
+Create a Node.js Project:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Create a new directory for the backend project.
+Initialize a new Node.js project using npm.
+Install Express: This is used to connect the server in backend and assign the port for the client requests and responses
 
-### `npm run build`
+Create a new JavaScript file for the server.
+Set up an Express server to listen on port 3000
+Define a route to handle file download requests. This route should read a file from the server’s storage and send it to the client.
+Run the Node.js Server:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Ensure Both Servers Are Running:
+The React app should be running on its default port (e.g., 3000).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+After running the both servers go to localhost:3000 to see the output 
+Here there is a choose file button to select the file and upload to your page again run the backend server using node ports.js
+And then click upload after successfully uploaded then click download to download the file to your downloads.
+By following these steps, one can set up and understand the file upload and download functionality using React.js and Node.js.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
